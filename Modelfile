@@ -1,0 +1,14 @@
+# Path ke file GGUF (Relative path dari posisi Modelfile)
+FROM ./models/mistral-7b-instruct-v0.2.Q4_K_M.gguf
+
+# Setting kreativitas (rendah biar faktual)
+PARAMETER temperature 0.2
+
+# Context window (Mistral v0.2 support 32k, kita set 8k biar aman di RAM)
+PARAMETER num_ctx 8192
+
+# Template Chat (PENTING biar dia paham instruksi User vs System)
+TEMPLATE """[INST] {{ .System }} {{ .Prompt }} [/INST]"""
+
+# Identitas Awal
+SYSTEM """Anda adalah asisten akademik ITB. Jawablah dengan sopan, ringkas, dan faktual dalam Bahasa Indonesia."""
