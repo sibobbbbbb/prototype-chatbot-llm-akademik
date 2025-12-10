@@ -48,12 +48,12 @@ chroma_db/
 # ===========================
 # Documents (Large Files)
 # ===========================
-# Exclude PDF files kecuali ada yang perlu di-commit
-documents/*.pdf
-documents/**/*.pdf
+# NOTE: Documents are included in the repository for this project
+# Uncomment lines below if you want to exclude PDFs:
+# documents/*.pdf
+# documents/**/*.pdf
+# !documents/example.pdf
 
-# Tapi allow example documents jika ada
-!documents/example.pdf
 
 # ===========================
 # Environment Variables
