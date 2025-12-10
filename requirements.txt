@@ -1,0 +1,36 @@
+# FastAPI and Web Framework
+fastapi
+uvicorn
+pydantic
+
+# CORS middleware (included in fastapi/starlette)
+python-multipart
+
+# LangChain and AI/ML Libraries
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-huggingface
+
+# Vector Database
+chromadb
+
+# Embeddings
+sentence-transformers
+huggingface-hub
+
+# PDF Processing
+PyPDF2
+pypdf
+pdfplumber
+
+# Data Processing
+pandas
+numpy
+
+# HTTP Requests
+requests
+aiohttp
+
+# Additional utilities
+python-dotenv
